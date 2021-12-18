@@ -30,6 +30,10 @@ img {
 }
 
 /* /////////////////////////////////////////////////////////// */
+.header-wrap {
+    background-color: #f5f5f5;
+}
+
 /* navbar */
 
 .navbar {
@@ -73,7 +77,7 @@ img {
 .navbar-tag {
     padding: 1rem .5rem;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 700;
     
 }
 
@@ -124,7 +128,7 @@ img {
 }
 
 .nav-font--open {
-    color: #ccc;
+    color: #f5f5f5;
 }
 
 .nav-font--close {
