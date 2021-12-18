@@ -31,13 +31,31 @@ img {
 
 /* common settings */
 
+.container {
+    width: 100%;
+}
+
 .heading-primary {
     font-size: 8rem;
     font-weight: 500;
 }
 
+.heading-secondary {
+    color: #535d26;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  
+  .heading-secondary span {
+    display: block;
+    font-weight: 600;
+    font-size: 55px;
+  }
+
 
 /* /////////////////////////////////////////////////////////// */
+/* .header-wrap */
+
 .header-wrap {
     background-color: #f5f5f5;
     position: relative;
@@ -240,6 +258,86 @@ img {
     border-radius: 50%;  
     font-size: 2rem;
 }
+
+/* /////////////////////////////////////////////////////////// */
+/* .new-products*/
+
+.new-products {
+    padding: 10% 5%;
+    position: relative;
+}
+
+.new-products::before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(rgba(255, 255, 255, .5),rgba(255, 255, 255, .5)),
+                    url('/imgs/bg_dry-flowers.jpeg') 0 0 / cover no-repeat;
+
+    background-attachment: fixed;
+}
+
+.product-wrap {
+      margin: 8rem auto;
+      max-width: 1000px; 
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+/* product card */
+
+.card {
+    width: 44%;
+    border-radius: 5px;
+  }
+
+.card img {
+    width: 100%;
+  }
+
+.card-txt {
+    margin: 3% 0;
+    padding: 0 3%;
+    line-height: 1.5;
+    color: #535D26;
+}
+
+.card-tag {
+    color: #535D26;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+.card-color {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.card-price {
+    font-weight: 670;
+    font-size: 1.5rem;
+    color: #6F737F;
+}
+
+
+
+
+
 
 
 /* animation */
