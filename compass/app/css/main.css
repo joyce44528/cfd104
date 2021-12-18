@@ -349,11 +349,18 @@ img {
 
 .card:nth-child(odd) {
     margin-top: 12%;
-  }
+}
   
-  .card:nth-child(even) {
+.card:nth-child(even) {
     margin-left: 12%;
-  }
+}
+
+/* //////////////////////////////////////////////// */
+/* series */
+
+.series {
+    padding: 10% 5%;
+}
 
 
 
