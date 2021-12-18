@@ -265,6 +265,8 @@ img {
 .new-products {
     padding: 10% 5%;
     position: relative;
+    z-index: -2;
+    background-image: linear-gradient(to right,#fff 10rem, #f5f5f5 10rem);
 }
 
 .new-products::before {
@@ -282,6 +284,7 @@ img {
 }
 
 .product-wrap {
+    position: relative;
       margin: 10rem auto;
       max-width: 1000px; 
       display: flex;
