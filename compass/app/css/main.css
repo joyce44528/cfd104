@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Serif+TC:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Serif+TC:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&Raleway:wght@300;400;500;600;700&display=swap');
 
 /* simple reset */
 *,
@@ -25,7 +25,114 @@ body {
 }
 
 img {
-    width: 100%;
     vertical-align: top;
     object-fit: cover;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+.navbar-logo {
+    display: block;
+    width: 8rem;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    max-width: 10rem;
+}
+
+
+.navbar-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #535D26;
+    
+}
+
+.navbar-link img {
+    display: block;
+    width: 30%;
+}
+
+.navbar-tag {
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+}
+
+/* nav-toggle */
+.nav-toggle {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: relative;
+}
+.nav-toggle::before {
+    content: '';
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 1px solid #535D26;
+    transition: all .3s ease-in;
+}
+
+.nav-label,
+.nav-font {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.nav-label {
+    border-radius: 50%;
+    width: 5.2rem;
+    height: 5.2rem;
+    background-color: #535D26;
+    
+   
+}
+
+.nav-font {
+    width: 98%;
+    text-align: center;
+    font-size: .5rem;
+    /* font-weight: 500; */
+    font-family: sans-serif;
+    
+}
+
+.nav-font--open {
+    color: #ccc;
+}
+
+.nav-font--close {
+    color: #535D26;
+    opacity: 0;
+}
+
+
+.nav-toggle:hover::before {
+    transform: scale(.8,.8);
 }
