@@ -432,13 +432,38 @@ img {
 }
 
 .column-all {
+    display: flex;
     background-color: #6F737F;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.column--box {
+    transition: transform .3s .1s cubic-bezier(.19,.8,.2,1.04);
+}
+
+.column-all img {
+    position: absolute;
+    top: 45%;
+    right: -5rem;
+    width: 5rem;
+    transition: right .8s cubic-bezier(.05,.27,.04,1.54);
+}
+
+.column-all:hover .column--box {
+    transform: translateX(-10rem);
+}
+
+.column-all:hover img {
+    right: 25rem;
 }
 
 .column-new {
     display: flex;
     align-items: center;
 }
+
 
 .column-new .floral-link {
     background-color: #BBA194
