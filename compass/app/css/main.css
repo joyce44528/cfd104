@@ -9,6 +9,11 @@
     box-sizing: inherit;
     list-style: none;
 }
+
+a {
+    text-decoration: none;
+}
+
 html {
     /* 10/16px = 62.5%  = 1rem*/
     font-size: 62.5%;  
