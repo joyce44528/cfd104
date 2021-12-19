@@ -13,7 +13,7 @@ export default {
         {
             _id: '2',
             name: '白白綿綿',
-            category: ['桌花','中型桌花'],
+            category: ['桌花'],
             image: '../imgs/product-2-square.jpeg',
             price: '550',
             color: ['#fff','#BFA686'],
@@ -23,7 +23,7 @@ export default {
         {
             _id: '3',
             name: '秋穫',
-            category: ['桌花','大型桌花'],
+            category: ['桌花'],
             image: '../imgs/product-3-square.jpeg',
             price: '1200',
             color: ['#fff','#BFA686'],
@@ -33,8 +33,8 @@ export default {
         {
             _id: '4',
             name: '浪漫粉裸花束',
-            category: ['花束','裸花束'],
-            image: '../imgs/product-4-square.jpeg',
+            category: ['花束'],
+            image: '../imgs/product-4-square.jpg',
             price: '420',
             color: ['#fff','#CBAAA0'],
             numReviews: 30,
@@ -43,7 +43,7 @@ export default {
         {
             _id: '5',
             name: '白色系小桌花組',
-            category: ['桌花','小型桌花'],
+            category: ['桌花'],
             image: '../imgs/product-5-square.jpeg',
             price: '1000',
             color: ['#fff','#B69961'],

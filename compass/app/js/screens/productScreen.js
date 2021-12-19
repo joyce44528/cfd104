@@ -5,7 +5,6 @@ const ProductScreen = {
         const {products} = data;
 
         return `
-        <ul class="products col-3-of-4">
             ${products.map(
                 (product) => `
                 <li class="product-card">
@@ -25,9 +24,9 @@ const ProductScreen = {
                     </div>
                 </li>
                 `
-            )}
-                
-            </ul>
+            ).join('\n')}
         `
     }
 }
+
+export default ProductScreen;
