@@ -352,7 +352,7 @@ button {
 
 .card-detail {
       display: flex;
-      margin-top: 1%;
+      margin-top: 3%;
       justify-content: space-between;
       align-items: center;
     }
@@ -624,6 +624,7 @@ main {
     font-size: 2rem;
     color: #535D26;
     text-align: left;
+    cursor: pointer;
 }
 
 .side-btn:first-child {
@@ -632,6 +633,7 @@ main {
 
 .side-btn--second {
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .side-btn--active {

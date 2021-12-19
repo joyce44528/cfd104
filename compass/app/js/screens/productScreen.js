@@ -15,7 +15,9 @@ const ProductScreen = {
                         </button>
                     </a>
                     <div class="card-txt">
-                        <a href="##" class="card-tag">${product.category}</a>
+                    ${product.category.map((tag,i) =>` 
+                        <a href="##" class="card-tag">${tag}</a>
+                        `).join('')}  
                         <a class="card-title">${product.name}</a>
                         <div class="card-detail">
                             <a class="card-color"></a>
