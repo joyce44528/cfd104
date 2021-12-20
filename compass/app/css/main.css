@@ -585,9 +585,12 @@ main {
 
 .footer-logo {
     text-align: center;
+    padding-bottom: 5%;
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+    border-bottom: 1px dotted #f5f5f5c2;
 }
+
 .footer-logo img {
     width: 20rem;
 }
@@ -605,18 +608,23 @@ main {
 .footer-list,.footer-link {
     color: #f5f5f5;
 }
+.footer-list {
+    width: calc(100% / 4 - 4rem);
+    margin: 0 2rem;
+}
 
 .footer-list:not(:last-child) {
-    margin-right: 2rem;
+    border-right: 1px dotted #f5f5f5c2;
 }
 
 .footer-title {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .footer-link {
     display: block;
     margin-top: .5rem;
+    font-size: 1.5rem;
 }
 
 .footer-copyright {
