@@ -219,6 +219,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(-100%);
+    transition: transform .3s ease-in;
+}
+
+.nav-wrap--active {
+    transform: translateY(0);
 }
 
 .main-nav {
