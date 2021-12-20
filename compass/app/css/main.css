@@ -153,6 +153,7 @@ button {
     height: 6rem;
     border-radius: 50%;
     position: relative;
+    z-index: 1200;
 }
 .nav-toggle::before {
     content: '';
@@ -205,6 +206,67 @@ button {
 .nav-toggle:hover::before {
     transform: scale(.8,.8);
 }
+
+
+/* main-nav */
+.nav-wrap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav {
+    padding: 5%;
+   
+}
+
+.nav-list {
+    margin-left: 1%;
+    width: 70%;
+}
+
+.nav-li {
+    position: relative;
+}
+
+
+.nav-li:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.nav-li--active::after {
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: 100%;
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-color: #ccc;
+    border-radius: 50%;
+
+}
+
+.nav-link {
+    display: block;
+    padding: 2%;
+    color: #535d26;
+    font-weight: 600;
+    font-size: 3rem;
+    width: 100%; 
+
+}
+
+.nav-img img {
+    width: 80%;
+    border-radius: 50%;
+}
+
 
 /* banner */
 .banner {
@@ -392,7 +454,7 @@ button {
 
 .series {
     padding: 10% 0;
-
+    background-color: #fff;
 }
 
 
