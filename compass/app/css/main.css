@@ -84,11 +84,14 @@ button {
 /* .header-wrap */
 
 .header-wrap {
-    background-color: #f5f5f5;
     position: relative;
 }
 
-.header-wrap::before {
+.main-header { 
+    background-color: #f5f5f5;
+}
+
+.main-header::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -277,8 +280,13 @@ button {
 /* banner */
 .banner {
     padding: 5% 0;
+    
+}
+
+.main-banner {
     background: url('/imgs/bg_brick-wall.jpg') 0 0 / cover;
 }
+
 
 .banner-wrap {
     position: relative;
@@ -619,6 +627,7 @@ main {
 
 .footer-title {
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .footer-link {
@@ -670,6 +679,27 @@ main {
 }
 
 
+/* //////////////////////////////////////////////// */
+/* inside-header */
+
+.inside-header {
+    /* background-color: transparent; */
+    background-image: linear-gradient(to bottom, #f5f5f54b 60%,rgba(66, 63, 63, 0.473)),url('https://images.pexels.com/photos/4273426/pexels-photo-4273426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-attachment: fixed;
+    background-position: 40% 30%;
+}
+
+
+/* .inside-banner {
+   
+} */
+
+.inside-title {
+    position: relative;
+    top: 17rem;
+    padding: 4rem;
+    color: #535D26;
+}
 
 
 /* //////////////////////////////////////////////// */
