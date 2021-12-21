@@ -473,7 +473,19 @@ button {
 
 .series-wrap {
     padding: 3% 5%;
+    position: relative;
     
+}
+
+.series-wrap::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    background-color: #535D26;
+
 }
 
 .series-item {
