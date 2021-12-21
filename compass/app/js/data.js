@@ -52,7 +52,7 @@ export default {
         },
         {
             _id: '6',
-            name: '未名',
+            name: '藍金璀璨',
             category: ['桌花','小型桌花'],
             image: '../imgs/product-6-square.jpg',
             price: '700',
@@ -73,12 +73,52 @@ export default {
         {
             _id: '8',
             name: '小穗花封蠟信封',
-            category: ['桌花','中型桌花'],
+            category: ['卡片','萬用卡'],
             image: '../imgs/product-8-square.jpg',
             price: '40',
             color: ['#554C4D'],
             numReviews: 104,
             countInStock: 132
+        },
+        {
+            _id: '9',
+            name: '散花滿天星',
+            category: ['桌花','小型桌花'],
+            image: '../imgs/product-9-square.jpeg',
+            price: '430',
+            color: ['#fff'],
+            numReviews: 30,
+            countInStock: 13
+        },
+        {
+            _id: '10',
+            name: '綠意盎然布花束',
+            category: ['桌花','小型桌花'],
+            image: '../imgs/product-11-square.jpg',
+            price: '620',
+            color: ['#485F47'],
+            numReviews: 45,
+            countInStock: 6
+        },
+        {
+            _id: '11',
+            name: '幸福滿滿喜帖',
+            category: ['卡片','邀請函'],
+            image: '../imgs/product-12-square.jpg',
+            price: '150',
+            color: ['#485F47'],
+            numReviews: 155,
+            countInStock: 68
+        },
+        {
+            _id: '12',
+            name: 'Door deco',
+            category: ['造型裝飾'],
+            image: '../imgs/product-13-square.jpg',
+            price: '450',
+            color: ['#485F47','#C4A299'],
+            numReviews: 155,
+            countInStock: 68
         },
 
 
