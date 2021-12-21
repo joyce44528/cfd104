@@ -471,6 +471,11 @@ button {
     background-color: #fff;
 }
 
+.series-wrap {
+    padding: 3% 5%;
+    display: flex;
+}
+
 
 /* //////////////////////////////////////////////// */
 /* floral */
