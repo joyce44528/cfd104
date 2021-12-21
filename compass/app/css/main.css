@@ -276,7 +276,7 @@ button {
 .nav-li--active::after {
     position: absolute;
     top: calc(50% - 1rem);
-    left: 90%;
+    left: -10%;
     content: '';
     width: 2rem;
     height: 2rem;
