@@ -1,10 +1,10 @@
  
  /* 格線系統 */
- .container {
+ /* .container {
     margin: auto;
     max-width: 1200px;
     padding: 0 10px;
-  }
+  } */
 
   .row {
     display: flex;
@@ -12,7 +12,7 @@
     margin: 0 -10px;
   }
 
-  [class*="col-"] {
+  .row > [class*="col-"] {
     padding: 0 1rem;
     margin: 1% 0;
   }
