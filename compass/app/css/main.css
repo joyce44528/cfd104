@@ -473,10 +473,12 @@ button {
 }    
 
 .card-color {
+    display: block;
     width: 2rem;
     height: 2rem;
     border: 1px solid #000;
     border-radius: 50%;
+    margin: 1% 0;
 }
 
 .card-color:not(:last-child) {
@@ -827,12 +829,15 @@ main {
 /* inside-header */
 
 .inside-header {
-    /* background-color: transparent; */
-    background-image: linear-gradient(to bottom, #f5f5f54b 60%,rgba(66, 63, 63, 0.473)),url('https://images.pexels.com/photos/4273426/pexels-photo-4273426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    /* background-color: transparent; */ 
     background-attachment: fixed;
-    background-position: 40% 30%;
+    
 }
 
+.inside-header--product {
+    background-image: linear-gradient(to bottom, #f5f5f54b 60%,rgba(66, 63, 63, 0.473)),url('https://images.pexels.com/photos/4273426/pexels-photo-4273426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: 40% 30%;
+}
 
 /* .inside-banner {
    
@@ -924,15 +929,18 @@ main {
 
 .add-cart {
     width: 4rem;
-    height: 4rem;
-    background-color: rgba(255, 255, 255, .5);
+    height: 4rem;   
     border-radius: 50%;
     position: absolute;
-    bottom: 5%;
     right: 5%;
     border: none;
     text-align: center;
 
+}
+
+.add-cart--product {
+    background-color: rgba(255, 255, 255, .5);
+    bottom: 5%;
 }
 
 .add-cart img {
@@ -945,6 +953,8 @@ main {
 
 .p-single {
     padding: 10% 5%;
+    background-color: #f5f5f5;
+    background-size: cover;
 }
 
 
@@ -965,7 +975,7 @@ main {
 .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     content: '>';
-    margin-right: 1rem;
+    margin: 0 1rem;
 }
 
 .breadcrumb-link {
@@ -973,19 +983,32 @@ main {
     color: #535D26;
 }
 
+.single-wrap {
+    align-items: start;
+}
+
 /* swiper */
+.swiper-slide {
+    
+}
+
 .swiper-slide img{
     width: 100%;
     vertical-align: top;
     object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #dfded8db, -3px -3px 5px rgba(255, 255, 255, .6);
 }
 
 
 /* single-text */
 .single-text {
-    margin: 2% 0;
-    padding: 2%;
-    background-color: #f5f5f5;
+    padding: 8% 3%;
+    background-color: #fff;
+    top: .5rem;
+    position: sticky;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 5px #dfded8db, -3px -3px 5px rgba(255, 255, 255, .6);
 }  
 
 .single-header {
@@ -1079,6 +1102,68 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+
+/* tab-explain */
+.explain-wrap {
+    padding: 5% 1%;
+}
+
+.tab-btn {
+    padding: 1%;
+    border-top: 1px solid #535d26;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.tab-btn--active {
+    background-color: #fff;
+    transform: translateY(-.5rem);
+}
+
+.explain-btn {
+
+}
+
+.explain-content {
+    font-size: 1.6em;
+}
+
+.explain-content--hidden {
+    
+}
+
+/* mayLike */
+.mayLike-wrap {
+    padding: 5% 0;
+}
+
+.mayLike-item {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    border-top: 1px solid #535d26;
+    border-bottom: 1px solid #535d26;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.mayLike-img img{
+    width: 100%;
+}
+
+.mayLike-text {
+   
+}
+
+.card-detail--mayLike {
+    display: block;
+}
+
+.add-cart--mayLike {
+    background-color: rgba(95, 89, 89, 0.5);
 }
 
 

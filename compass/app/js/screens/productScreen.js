@@ -10,7 +10,7 @@ const ProductScreen = {
                 <li class="product-card">
                     <a href="/#/product/${product._id}" class="product-img">
                         <img src="${product.image}" alt="${product.name}">
-                        <button class="btn add-cart">
+                        <button class="btn add-cart add-cart--product">
                             <img src="imgs/SVG/cart.svg" alt="shop cart icon">
                         </button>
                     </a>
