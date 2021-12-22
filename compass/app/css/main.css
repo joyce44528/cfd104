@@ -931,14 +931,14 @@ main {
     width: 4rem;
     height: 4rem;   
     border-radius: 50%;
-    position: absolute;
-    right: 5%;
     border: none;
     text-align: center;
 
 }
 
 .add-cart--product {
+    position: absolute;
+    right: 5%;
     background-color: rgba(255, 255, 255, .5);
     bottom: 5%;
 }
@@ -1145,7 +1145,6 @@ input::-webkit-inner-spin-button {
     align-items: center;
     border-top: 1px solid #535d26;
     border-bottom: 1px solid #535d26;
-    position: relative;
     cursor: pointer;
 }
 
@@ -1159,11 +1158,13 @@ input::-webkit-inner-spin-button {
 }
 
 .card-detail--mayLike {
+    position: relative;
     display: block;
 }
 
 .add-cart--mayLike {
     background-color: rgba(95, 89, 89, 0.5);
+    margin-top: 2rem;
 }
 
 
