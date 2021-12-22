@@ -2,6 +2,7 @@
 
 @import url('/compass/app/css/grid.css');
 
+
 /* simple reset */
 *,
 *::before,
@@ -981,8 +982,98 @@ main {
 
 
 /* single-text */
+.single-text {
+    margin: 2% 0;
+    padding: 2%;
+    background-color: #f5f5f5;
+    
+}
 
+.single-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.single-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #535D26;
+}
+
+.single-info {
+    width: 25%;
+    font-size: 1.4rem;
+    color: #535D26;
+}
+
+.single-review {
+    display: flex;
+}
+
+.review-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.single-detail,
+.single-depiction,
+.single-input {
+    margin-bottom: 3%;
+
+}
+
+.single-price,
+.single-depiction {
+    padding: 2% 0;
+}
+
+.single-price {
+    font-size: 2rem;
+    color: #195062;
+}
+
+.single-depiction {
+    font-size: 1.6rem;
+}
+
+.single-input input{
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+    
+}
+
+.single-input label{
+    display: inline-block;
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: #fff;
+    border: 1px solid #195062;
+}
+
+.single-input input:checked.single-input label {
+    background-color: #195062;
+    color: #f5f5f5;
+}
+
+.single-cart {
+    display: flex;
+    
+}
+
+.single-cart input,
+.add-btn  {
+    padding: 1%;
+}
+
+.single-cart input {
+    text-align: center;
+}
+
+.add-btn {
+    background-color: #195062;
+    color: #f5f5f5;
+}
 
 
 

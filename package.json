@@ -9,6 +9,7 @@
     "gulp": "^4.0.2"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.7.2",
     "gulp-connect": "^5.7.0"
   }
 }
