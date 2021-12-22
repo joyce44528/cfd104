@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Serif+TC:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&Raleway:wght@300;400;500;600;700&display=swap');
 
+@import url('/compass/app/css/grid.css');
+
 /* simple reset */
 *,
 *::before,
@@ -938,10 +940,57 @@ main {
 
 
 
+/* p-single */
+
+.p-single {
+    padding: 10% 5%;
+}
+
+
+/* breadcrumb */
+.breadcrumb-wrap {
+    margin-bottom: 1rem;
+}
+
+.breadcrumb {
+    display: flex;
+
+}
+
+.breadcrumb-item:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    content: '>';
+    margin-right: 1rem;
+}
+
+.breadcrumb-link {
+    font-size: 1.6rem;
+    color: #535D26;
+}
+
+/* swiper */
+.swiper-slide img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+
+/* single-text */
 
 
 
 
+
+@media screen and (min-width: 768px) {
+    .single-wrap {
+        flex-direction: row-reverse;
+    }
+}
 
 
 
