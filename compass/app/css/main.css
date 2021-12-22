@@ -994,8 +994,6 @@ main {
 
 .swiper-slide img{
     width: 100%;
-    vertical-align: top;
-    object-fit: cover;
     border-radius: 5px;
     box-shadow: 3px 3px 5px #dfded8db, -3px -3px 5px rgba(255, 255, 255, .6);
 }
@@ -1009,6 +1007,7 @@ main {
     position: sticky;
     margin-bottom: 2rem;
     box-shadow: 3px 3px 5px #dfded8db, -3px -3px 5px rgba(255, 255, 255, .6);
+    transition: .2s ease-in;
 }  
 
 .single-header {
@@ -1150,15 +1149,16 @@ input::-webkit-inner-spin-button {
     border-top: 1px solid #535d26;
     border-bottom: 1px solid #535d26;
     cursor: pointer;
+    transition: all .2s ease-in;
 }
 
+.mayLike-item:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: .7;
+}
 
 .mayLike-img img{
     width: 100%;
-}
-
-.mayLike-text {
-   
 }
 
 .card-detail--mayLike {
@@ -1216,6 +1216,8 @@ input::-webkit-inner-spin-button {
     left: 24%;
     
 }
+
+
 
 @media screen and (min-width: 768px) {
     .single-wrap {
