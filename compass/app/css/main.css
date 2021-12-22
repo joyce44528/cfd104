@@ -1139,6 +1139,10 @@ input::-webkit-inner-spin-button {
     padding: 5% 0;
 }
 
+.mayLike-slider {
+    position: relative;
+}
+
 .mayLike-item {
     display: flex;
     padding: 1rem 0;
@@ -1167,7 +1171,51 @@ input::-webkit-inner-spin-button {
     margin-top: 2rem;
 }
 
+/* slide-btn */
 
+.slide-btn {
+    position: absolute;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    left: calc(50% - 4rem);
+}
+
+
+.slide-btn--mayLike:first-child {
+    top: -4rem;
+}
+.slide-btn--mayLike:first-child::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 2rem solid #535d26;
+    top: 20%;
+    left: 24%;
+    
+}
+
+.slide-btn--mayLike:last-child {
+    bottom: -4rem;
+}
+
+.slide-btn--mayLike:last-child::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 2rem solid #535d26;
+    top: 30%;
+    left: 24%;
+    
+}
 
 @media screen and (min-width: 768px) {
     .single-wrap {
