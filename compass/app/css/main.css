@@ -855,9 +855,10 @@ main {
     background-position: 40% 30%;
 }
 
-/* .inside-banner {
-   
-} */
+.inside-header--about {
+    background-image: linear-gradient(to bottom, #f5f5f54b 60%,rgba(66, 63, 63, 0.473)),url('https://images.pexels.com/photos/4622218/pexels-photo-4622218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: 70% 100%;
+}
 
 .inside-title {
     position: relative;
@@ -1501,6 +1502,94 @@ input[name="cart-num"] {
     color: #f5f5f5;
     font-size: 1.6rem;
     padding: 1rem;
+}
+
+/* ////////////////////////////////////////// */
+/* about */
+.about-wrap {
+    background-color: #f5f5f5;
+    padding: 10% 5%;
+    position: relative;
+    z-index: -2;
+    
+}
+
+.about-logo {
+    text-align: center;
+    margin: 3rem;
+
+}
+.about-logo img {
+    width: 20%;
+}
+
+.about-brend {
+    justify-content: center;
+}
+
+.about-text {
+    margin-top: 20%;
+    color: #535D26;
+    font-size: 1.6rem;
+    line-height: 2.5;
+    position: relative;
+}
+
+
+
+.about-text::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('https://images.pexels.com/photos/4273467/pexels-photo-4273467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') 40% 30% / cover;
+    background-attachment: fixed;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    right: -80%;
+    z-index: -1;
+}
+
+.about-image {
+    max-width: 800px;
+    margin: 16% auto;
+    padding-left: -5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-image::after {
+    content: '';
+    width: 80%;
+    padding-bottom: 70%;
+   background-image: url('https://images.pexels.com/photos/7055160/pexels-photo-7055160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+   background-size: cover;
+   background-attachment: fixed;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.about-img:nth-child(1) {
+    width: 51%;
+}
+.about-img:nth-child(2) {
+    margin-top: 35%;
+    width: 45%;
+}
+
+.about-img:nth-child(3) {
+    margin-top: -20%;
+    margin-left: 16%;
+    width: 25%;
+}
+
+.about-img img{
+    width: 100%;
 }
 
 
