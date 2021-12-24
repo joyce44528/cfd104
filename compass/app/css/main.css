@@ -69,6 +69,12 @@ button {
     font-size: 2.4rem;
 }
 
+.text-base {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #535d26;
+}
+
 .para {
     margin: 2% 0;
 }
@@ -1345,6 +1351,140 @@ input::-webkit-inner-spin-button {
 .form-btn:active {
     background-color: #ffffff;
 } 
+
+
+/* cart */
+
+.cart-wrap {
+    padding: 4rem 3rem;
+}
+
+.cart-content {
+    background-color: #ccc;
+    height: 120vh;
+    overflow-y: scroll;
+    margin-bottom: -1rem;
+    overflow-y: auto;
+}
+
+.cart-content::-webkit-scrollbar{
+
+    display: none;
+    
+}
+
+.buyflow-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+}
+
+.buyflow-item {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buyflow-item:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.buyflow-order {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #535d26;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.cart-list {
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #535d26;
+    padding: 2rem 0;
+}
+
+.cart-num {
+    background-color: #f5f5f5;
+    display: flex;
+}
+
+input[name="cart-num"] {
+    display: inline-block;
+    padding: 1rem 0;
+    text-align: center;
+    border: none;
+    font-size: 1.4rem;
+    vertical-align: top;
+    outline: none;
+    background-color: transparent;
+    width: 50%;
+    color: #535d26;
+}
+
+.num-btn {
+    display: inline-block;
+   font-size: 1.4rem;
+   padding: 1rem;
+   width: 23%;
+   color: #535d26;
+}
+
+
+
+.cart-img {
+    display: block;
+
+}
+
+.cart-img img {
+    width: 100%;
+}
+
+.cart-price {
+    font-weight: 600;
+    color: #195062;
+}
+
+.cart-finall {
+    padding: 2rem 0;
+}
+
+.cart-finall, 
+.cart-checkout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-total {
+    color: 535d26;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.empty-btn {
+    padding: 1rem;
+    border: 1px solid #535d26;
+}
+
+.checkout-btn {
+    background-color: #27414F;
+    color: #f5f5f5;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
 
 
 
