@@ -855,12 +855,12 @@ main {
 }
 
 .inside-header--product {
-    background-image: linear-gradient(to bottom, #c7c2c27c 60%,rgba(66, 63, 63, 0.473)),url('https://images.pexels.com/photos/4273426/pexels-photo-4273426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: linear-gradient(to bottom, #c7c2c27c 60%,rgba(66, 63, 63, 0.473)),url('../imgs/banner-products.jpeg');
     background-position: 40% 30%;
 }
 
 .inside-header--about {
-    background-image: linear-gradient(to bottom, #f5f5f54b 60%,transparent),url('https://images.pexels.com/photos/4622218/pexels-photo-4622218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: linear-gradient(to bottom, #f5f5f54b 60%,transparent),url('../imgs/banner-about.jpeg');
     background-position: 70% 100%;
 }
 
@@ -1261,7 +1261,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('https://images.pexels.com/photos/2395239/pexels-photo-2395239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background: url('..../imgs/bg_white-leaf.jpeg');
 }
 
 
@@ -1526,7 +1526,7 @@ input[name="cart-num"] {
     position: absolute;
     top: 15%;
     left: 0;
-    background: url('/imgs/bg_pink.png') center center / cover;
+    background: url('../imgs/bg_pink.png') center center / cover;
     z-index: -1;
 }
 
@@ -1588,7 +1588,7 @@ input[name="cart-num"] {
     content: '';
     width: 90%;
     height: 95%;
-    background: linear-gradient(to bottom, #f5f5f5f6 40%,#f5f5f588),url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') center center / cover;
+    background: linear-gradient(to bottom, #f5f5f5f6 40%,#f5f5f588),url('../imgs/bg_white-trace.jpeg') center center / cover;
     position: absolute;
     top: 5%;
     left: 0;
