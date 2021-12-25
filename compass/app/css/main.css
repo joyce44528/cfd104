@@ -1637,7 +1637,7 @@ input[name="cart-num"] {
 }
 
 
-.contact-box > div {
+.contact-box > div:not(:last-child) {
     display: flex;
     align-items: center;
     padding-right: 1rem;
@@ -1672,7 +1672,29 @@ input[name="cart-num"] {
     resize: none;
 }
 
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1rem;
+}
 
+.contact-btn button {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1.4em;
+    color: #535d26;
+    padding: 1rem;
+}
+
+.contact-btn button[type="submit"] {
+    border: 1px solid#535d26;
+    transition: .2 ease;
+}
+
+.contact-btn button[type="submit"]:hover {
+    background-color: #f5f5f5;
+}
 
 .contact-social {
    background-color: #8d7978;
