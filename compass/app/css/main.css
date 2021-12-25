@@ -337,7 +337,7 @@ button {
 }
 
 .main-banner {
-    background: url('/imgs/bg_brick-wall.jpg') 0 0 / cover;
+    background: url('imgs/bg_brick-wall.jpg') 0 0 / cover;
 }
 
 
@@ -385,7 +385,7 @@ button {
     content: '';
     width: 12rem;
     height: 12rem;
-    background-image: url('/imgs/SVG/logo-decoration.svg');
+    background-image: url('imgs/SVG/logo-decoration.svg');
     position: absolute;
     top: 5%;
     right: 0;
@@ -434,7 +434,7 @@ button {
     left: 0;
     z-index: -1;
     background: linear-gradient(rgba(255, 255, 255, .5),rgba(255, 255, 255, .5)),
-                    url('/imgs/bg_dry-flowers.jpeg') 0 0 / cover no-repeat;
+                    url('imgs/bg_dry-flowers.jpeg') 0 0 / cover no-repeat;
 
     background-attachment: fixed;
 }
@@ -524,7 +524,7 @@ button {
 
 .series {
     padding: 10% 0;
-    background-image: linear-gradient(to bottom, #c7b9b3e8, #d8d8d8b0),url('/imgs/bg_dott.jpg');
+    background-image: linear-gradient(to bottom, #c7b9b3e8, #d8d8d8b0),url('imgs/bg_dott.jpg');
     background-size: cover;
 }
 
@@ -591,24 +591,24 @@ button {
 
 
 .bg--table {
-    background-image: url('/imgs/product-2-square.jpeg');
+    background-image: url('imgs/product-2-square.jpeg');
     background-position: center center;
 }
 
 .bg--bouquet {
-    background-image: url('/imgs/product-11-square.jpg');
+    background-image: url('imgs/product-11-square.jpg');
     background-size: 50%;
     background-position: 5% 0;
 }
 
 .bg--card {
-    background-image: url('/imgs/product-12-square.jpg');
+    background-image: url('imgs/product-12-square.jpg');
     background-size: 110% 100%;
     background-position: center center;
 }
 
 .bg--deco {
-    background-image: url('/imgs/product-13-square.jpg');
+    background-image: url('imgs/product-13-square.jpg');
     background-position: center center;
 }
 
@@ -751,7 +751,7 @@ main {
     background-color: #fff;
     z-index: -3;
     padding: 5% 3%;
-    background-image: linear-gradient(to bottom, rgba(11, 93, 131, 0.2),rgba(22, 69, 83, 0.3)),url('/imgs/bg-blue.png');
+    background-image: linear-gradient(to bottom, rgba(11, 93, 131, 0.2),rgba(22, 69, 83, 0.3)),url('imgs/bg-blue.png');
     display: flex;
     flex-direction: column;
     justify-content: space-between;
