@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Serif+TC:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&Raleway:wght@300;400;500;600;700&display=swap');
 
+@import url('/compass/app/css/nomalize.css');
+
 @import url('../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 
 @import url('/compass/app/css/grid.css');
@@ -9,8 +11,8 @@
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     box-sizing: inherit;
     list-style: none;
 }
@@ -71,6 +73,7 @@ button {
 }
 
 .text-base {
+    margin-left: 5%;
     font-weight: 600;
     font-size: 1.6rem;
     color: #535d26;
@@ -164,6 +167,7 @@ button {
 
 .navbar ul {
     display: flex;
+    margin-right: 8rem;
 }
 
 .navbar-list {
@@ -200,10 +204,13 @@ button {
     display: block;
     width: 6rem;
     height: 6rem;
-    position: relative;
+    position: fixed;
+    top: .8rem;
+    right: 1rem;
     border-radius: 50%;
     z-index: 1200;
 }
+
 .nav-toggle::before {
     content: '';
     width: 6rem;
@@ -851,7 +858,7 @@ main {
 }
 
 .inside-header--product {
-    background-image: linear-gradient(to bottom, #6e3838b2 60%,rgba(66, 63, 63, 0.473)),url('https://images.pexels.com/photos/4273426/pexels-photo-4273426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: linear-gradient(to bottom, #c7c2c27c 60%,rgba(66, 63, 63, 0.473)),url('https://images.pexels.com/photos/4273426/pexels-photo-4273426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-position: 40% 30%;
 }
 
@@ -1594,6 +1601,7 @@ input[name="cart-num"] {
 .contact-header {
     justify-content: center;
     align-items: center;
+    padding: 5% 0;
 }
 
 .contact-image {
@@ -1615,6 +1623,105 @@ input[name="cart-num"] {
     top: 25%;
     left: 10%;
 }
+
+
+.contact-content {
+    padding: 0 3%;
+    justify-content: center;
+    align-items: start;
+}
+
+
+.contact-form {
+    padding: 0 2rem;
+}
+
+
+.contact-box > div {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    border-bottom: 1px solid #535d26;
+    margin-right: 1rem;
+}
+
+.contact-box label {
+   padding: 0 1rem;
+   color: #535d26;
+   font-size: 1.4rem;
+}
+
+.contact-box input,
+.contact-box select {
+    width: 100%;
+    border: none;
+    height: 100%;
+    outline: none;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    color: #535d26;
+}
+
+.contact-textarea {
+    border: none;
+    outline: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem;
+    resize: none;
+}
+
+
+
+.contact-social {
+   background-color: #8d7978;
+   padding: 5% 0;
+   position: relative;
+   z-index: 1;
+}
+
+.contact-social::before {
+    content: '';
+    width: 80%;
+    padding-bottom: 80%;
+    border: 2px dotted #535d26;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.contact-title {
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+
+.social-item {
+    margin-left: 1rem;
+}
+
+.social-link--contact {
+    display: block;
+}
+
+.social-link--contact .bi{
+    color: #f5f5f5;
+}
+
+
+.social-link--contact:hover .bi{
+    color: #535d26;
+}
+
 
 
 @media screen and (min-width: 768px) {
