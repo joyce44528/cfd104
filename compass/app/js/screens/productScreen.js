@@ -8,7 +8,7 @@ const ProductScreen = {
             ${products.map(
                 (product) => `
                 <li class="product-card">
-                    <a href="/#/product/${product._id}" class="product-img">
+                    <a href="product-single.html" class="product-img">
                         <img src="${product.image}" alt="${product.name}">
                         <button class="btn add-cart add-cart--product">
                             <img src="imgs/SVG/cart.svg" alt="shop cart icon">
