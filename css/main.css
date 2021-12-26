@@ -869,13 +869,14 @@ main {
 }
 
 .inside-header--product {
-    background-image: linear-gradient(to bottom, #c7c2c27c 60%,rgba(66, 63, 63, 0.473)),url('../imgs/banner-products.jpeg');
+    background-image: linear-gradient(to bottom, #c7c2c27c 60%,rgba(66, 63, 63, 0.473)),url('../imgs/banner-products.jpg');
+    background-size: cover;
     background-position: 40% 30%;
 }
 
 .inside-header--about {
-    background-image: linear-gradient(to bottom, #f5f5f54b 60%,transparent),url('../imgs/banner-about.jpeg');
-    background-position: 70% 100%;
+    background-image: linear-gradient(to bottom, #f5f5f54b 60%,transparent),url('../imgs/banner-about.jpg');
+    background-position: 70% 274%;
 }
 
 .inside-title {
@@ -1323,6 +1324,8 @@ input::-webkit-inner-spin-button {
     margin-bottom: 1rem;
     font-weight: 400;
     position: relative;
+    font-size: 1.4rem;
+    color: #535D26;
 }
 
 .login-label::before {
@@ -1653,32 +1656,27 @@ input[name="cart-num"] {
     align-items: center;
     padding-right: 1rem;
     border-bottom: 1px solid #535d26;
-    margin-right: 1rem;
 }
 
 .contact-box label {
-   padding: 0 1rem;
+   padding: 0 1rem 1rem 1rem;
    color: #535d26;
    font-size: 1.4rem;
 }
 
 .contact-box input,
-.contact-box select {
+.contact-box select,
+.contact-textarea {
     width: 100%;
     border: none;
     height: 100%;
     outline: none;
     padding: 0.5rem 0;
     background-color: transparent;
-    color: #535d26;
+    font-size: 1.6rem;
 }
 
 .contact-textarea {
-    border: none;
-    outline: none;
-    outline: none;
-    background-color: transparent;
-    width: 100%;
     padding: 1rem;
     resize: none;
 }
