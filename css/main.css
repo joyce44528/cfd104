@@ -101,23 +101,23 @@ button {
     left: 70%;
 }
 
-.col-1-of-2 {
+.cols-1-of-2 {
     width: 50%;
 }
 
-.col-1-of-3 {
+.cols-1-of-3 {
     width: 33.33%;
 }
 
-.col-2-of-3 {
+.cols-2-of-3 {
     width: 66.67%;
 }
 
-.col-1-of-4 {
+.cols-1-of-4 {
     width: 25%;
 }
 
-.col-3-of-4 {
+.cols-3-of-4 {
     width: 75%;
 }
 
@@ -435,7 +435,7 @@ button {
 .new-products {
     padding: 10% 0;
     position: relative;
-    z-index: -2;
+    z-index: 1;
     background-image: linear-gradient(to right,#fff 10rem, #f5f5f5 10rem);
 }
 
@@ -446,7 +446,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 2;
     background: linear-gradient(rgba(255, 255, 255, .5),rgba(255, 255, 255, .5)),
                     url('../imgs/bg_dry-flowers.jpeg') 0 0 / cover no-repeat;
 
@@ -459,6 +459,7 @@ button {
       max-width: 1000px; 
       display: flex;
       flex-wrap: wrap;
+      align-items: start;
     }
 
 /* product card */
@@ -466,8 +467,14 @@ button {
 .card {
     width: 44%;
     border-radius: 5px;
+    transition: .2s ease-in;
+    z-index: 2;
   }
 
+  .card:hover {
+      background-color: #fff;
+      opacity: .7;
+  }
 
 .card-img {
     display: block;
