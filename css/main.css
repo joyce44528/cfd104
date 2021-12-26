@@ -1275,7 +1275,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('..../imgs/bg_white-leaf.jpeg');
+    background: url('../imgs/bg_white-leaf.jpeg');
 }
 
 
