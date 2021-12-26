@@ -820,6 +820,7 @@ main {
     color: #aaa;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-copyright ul {
@@ -835,6 +836,10 @@ main {
     display: inline-block;
     margin: 0 .5rem;
     
+}
+
+.copyright {
+    line-height: 1.5;
 }
 
 .footer-up{
