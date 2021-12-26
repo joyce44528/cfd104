@@ -1,13 +1,9 @@
+const navBtn = document.querySelector('.nav-toggle');
 
-import ProductScreen from "./screens/productScreen.js";
-import NavToggle from "./features/NavToggle.js";
-
-const router = () => {
-    const productsDOM = document.querySelector('#products-container');
-    productsDOM.insertAdjacentHTML('beforeend',ProductScreen.render());
+const navToggle = (e) => {
+    e.preventDefault();
+    const navWrap = document.querySelector('.nav-wrap');
+    navWrap.classList.toggle('nav-wrap--active');
 }
 
-window.addEventListener('load',router);
-
-const navBtn = document.querySelector('.nav-toggle');
-navBtn.addEventListener('click',NavToggle);
+navBtn.addEventListener('click',navToggle);
