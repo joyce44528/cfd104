@@ -288,6 +288,8 @@ button {
 
 .nav-li {
     position: relative;
+    border-radius: 3px;
+    transition: .2s ease-in;
 }
 
 
@@ -309,6 +311,8 @@ button {
 
 .nav-li:hover {
     background-color: #f5f5f5;
+    box-shadow: 3px 3px 5px #dfded8db, -3px -3px 5px rgba(255, 255, 255, .6);
+
 }
 
 .nav-link {
@@ -453,7 +457,7 @@ button {
 }
 
 /* /////////////////////////////////////////////////////////// */
-/* .new-products*/
+/* new-products*/
 
 .new-products {
     padding: 10% 0;
@@ -494,10 +498,10 @@ button {
     z-index: 2;
   }
 
-  .card:hover {
-      background-color: #fff;
-      opacity: .7;
-  }
+.card:hover {
+    background-color: #fff;
+    opacity: .7;
+}
 
 .card-img {
     display: block;
@@ -562,6 +566,7 @@ button {
 .card:nth-child(even) {
     margin-left: 12%;
 }
+
 
 /* //////////////////////////////////////////////// */
 /* series */
@@ -923,6 +928,9 @@ main {
 
 
 /* //////////////////////////////////////////////// */
+/* products.html */
+
+
 /* side-assort */
 
 .side-assort {
@@ -965,6 +973,7 @@ main {
 .side-btn--active {
     background-color: #f5f5f5;
 }
+
 
 /* product-all */
 
@@ -1018,7 +1027,8 @@ main {
     width: 90%;
 }
 
-
+/* ///////////////////////////////////////////////////////////////////// */
+/* product-single.html */
 
 /* p-single */
 
@@ -1059,9 +1069,6 @@ main {
 }
 
 /* swiper */
-.swiper-slide {
-    
-}
 
 .swiper-slide img{
     width: 100%;
@@ -1197,9 +1204,6 @@ input::-webkit-inner-spin-button {
     transform: translateY(-.5rem);
 }
 
-.explain-btn {
-
-}
 
 .explain-content {
     font-size: 1.6em;
@@ -1302,7 +1306,7 @@ input::-webkit-inner-spin-button {
 
 
 /* /////////////////////////////////////////// */
-/* login */
+/* login.html */
 
 .form-wrap {
     height: 100vh;
@@ -1422,7 +1426,8 @@ input::-webkit-inner-spin-button {
 } 
 
 
-/* cart */
+/* ///////////////////////////////////////////////////////// */
+/* cart.html */
 
 .cart {
     background-color: #f5f5f5;
@@ -1571,8 +1576,10 @@ input[name="cart-num"] {
     padding: 1rem;
 }
 
+
 /* ////////////////////////////////////////// */
-/* about */
+/* about.html */
+
 .about-wrap {
     background-color: #f5f5f5;
     padding: 10% 5%;
@@ -1637,7 +1644,7 @@ input[name="cart-num"] {
 
 
 /* /////////////////////////////////////////// */
-/* contact */
+/* contact.html */
 
 .contact-wrap {
     background-color: #fff;
@@ -1799,6 +1806,9 @@ input[name="cart-num"] {
 }
 
 
+
+
+/* RWD setting */
 
 @media screen and (min-width: 768px) {
     .single-wrap {
