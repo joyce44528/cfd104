@@ -1213,7 +1213,7 @@ input::-webkit-inner-spin-button {
 }
 
 .explain-inner {
-    top: 0;
+    display: none;
     opacity: 0;
     line-height: 1.5;
 }
